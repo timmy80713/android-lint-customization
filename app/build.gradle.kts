@@ -38,9 +38,16 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
+
+    lint {
+        textReport = true
+    }
 }
 
 dependencies {
+
+    implementation(project(":lint:checks"))
+    implementation(project(":lint:envelop"))
 
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
