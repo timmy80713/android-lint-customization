@@ -36,6 +36,7 @@ lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = 
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "plugin-android" }
+android-library = { id = "com.android.library", version.ref = "plugin-android" }
 android-lint = { id = "com.android.lint", version.ref = "plugin-android" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "plugin-kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "plugin-kotlin" }

@@ -22,4 +22,5 @@ dependencyResolutionManagement {
 include(
     ":app",
     ":lint:checks",
+    ":lint:envelop",
 )
