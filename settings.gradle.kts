@@ -19,4 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-include(":app")
+include(
+    ":app",
+    ":lint:checks",
+)

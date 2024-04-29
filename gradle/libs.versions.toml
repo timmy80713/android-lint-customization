@@ -16,7 +16,11 @@ google-material = "1.11.0"
 
 junit = "4.13.2"
 
+lint = "31.3.2"
+
 [libraries]
+
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "plugin-kotlin" }
 
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
@@ -28,6 +32,10 @@ google-material = { group = "com.google.android.material", name = "material", ve
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
+lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = "lint" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "plugin-android" }
+android-lint = { id = "com.android.lint", version.ref = "plugin-android" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "plugin-kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "plugin-kotlin" }
